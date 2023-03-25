@@ -2,11 +2,12 @@
   console.log("hi2")
   var catImage = document.getElementById('catImage');
   //let images = ['Pictures/catpic1.png', 'Pictures/catpic2.png','Pictures/catpic3.png', 'Pictures/catpic4.png']
-  var images = ['../Pictures/catpic1.png.png', '../Pictures/catpic2.png.png','../Pictures/catpic3.png.png', '../Pictures/catpic4.png.png']
+  var images = ['../Pictures/catpic1.png.png', '../Pictures/catpic2.png.png','../Pictures/catpic3.png.png', '../Pictures/catpic4.png.png', '../Pictures/catpic5.png','../Pictures/catpic6.png','../Pictures/catpic7.png', '../Pictures/catpic8.png', '../Pictures/catpic9.png', '../Pictures/catpic10.png', '../Pictures/catpic11.png']
+ //added more picture variations in week 10!
 
   setInterval(function(){
     console.log("hello")
-    var random = Math.floor(Math.random() * 3);
+    var random = Math.floor(Math.random() * 11);
     catImage.src = images[random];
   },800);
 
@@ -116,5 +117,17 @@
 
 //   document.querySelector(".counter").innerHTML = counter;
 // }
+
+let counter = 0; 
+
+donateFunction = function () {  
+  counter = counter +1;
+ 
+  //step 1f
+  document.getElementById("donatebutton").innerHTML = "OK, you have now clicked " + counter + " converted into $" + counter*0.01;
+
+}
+
+
 
 

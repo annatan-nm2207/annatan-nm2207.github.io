@@ -36,12 +36,24 @@ h1 {
   font:100%;
 }
 
+.float-child-Left{
+ float: right;
+ position: relative;
+ Width: 500px
+}
+
+.float-child-Right{
+  float: left;
+  position: relative;
+  Width: 100px;
+ }
+
+
 .segment2{
  background-color:#F6E7D8; 
  text-align: center;
  font-size: 100%;
 }
-
 
 .lifespan{
   color:#aaa7D8; 
@@ -52,7 +64,9 @@ h1 {
 
  .lifespanSlider{
   color:#874356;
-  width:auto;
+  width:100%;
+  position: relative;
+  
  }
 
 
@@ -72,7 +86,7 @@ h1 {
   line-height: 20px;
   padding: 6px 16px;
   position: relative;
-  text-align: center;
+  text-align: right;
 }
 
 #patButton {
@@ -90,7 +104,7 @@ h1 {
   line-height: 20px;
   padding: 6px 16px;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -149,8 +163,3 @@ button:hover {
 .accordion-button-0{
  size:medium;
 }
-
- .catRight{
- float: right;
-
- }
