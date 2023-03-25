@@ -21,7 +21,7 @@
       </span>
       <ol>
         <div id="storyboardList">
-          <a href="../Pictures/Step 1 Problem.png" target="_blank" class="menuButton">Storyboard Draft!</a>
+          <a href="https://www.canva.com/design/DAFdQtFPq5U/ggdmQnZAUk6EjVl9RoIahA/watch?utm_content=DAFdQtFPq5U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="menuButton">Storyboard Draft!</a>
           <a href="https://docs.google.com/document/d/1JiiO_21bts9LSmKext3AURvB5lTZOJKBVsVc8F3TBc4/edit?usp=sharing" target="_blank" class="menuButton">Progress Documentation [Live]</a>
           <a href="../Pictures/ideaPage1.png.png" target="_blank" class="menuButton">Figma Design One!</a>
           <a href="../Pictures/ideaPage2.png.png" target="_blank" class="menuButton">Figma Design Two!</a>
@@ -47,20 +47,19 @@
     <a href="../Pictures/ideaPage3.png.png" target="_blank" class="menuButton">Figma Design Three!</a>
     <a href="../Pictures/ideaPage4.png.png" target="_blank" class="menuButton">Figma Design Four!</a>
 
-  </div>-->
+  </div>
+</nav>-->
 
-</nav>
 
-    <div>
+    <div id="float-child-Left">
     <h2 class="h2">You Should</h2>
     <h1 class="h1">ADOPT CATS</h1>
     <h2 class="h2"><em>Because <span class="auto-type"></span></em></h2>
-    <div style="text-align: right" id="catRight">
-      <img src="../Pictures/catpic1.png.png" id="catImage" width="200px">
-      </div>
-  
-  
   </div>
+
+    <div id="float-child-Right" style="text-align: right">
+    <img src="../Pictures/catpic1.png.png" id="catImage" width="200px">
+    </div>
 
     <!--adding js into html, credits to https://www.youtube.com/watch?v=IbGSsy17Ass and adjusted the speed-->
 
@@ -74,9 +73,10 @@
 
       <br>
           <div class="lifespanSlider">
-          <input type="range" min="0" max="100" id="ageRanger" step="25">
+          <input type="range" min="0" max="100" id="ageRanger" step="25" style:width="800px">
         </div>
     <!--My challenge here is changing the slider color and expanding it full screen-->
+    <!--It doesn't seem to work even after adding width="800px"-->
     </div>
 
 
@@ -104,12 +104,25 @@
     <div class="segment4">
       <br>
       <h4 style="font-size: 40px">How You Can Help</h4>
+      <style>
+        #petButton{
+        float:left;   
+        border: left;
+        /*margin: 5%;*/
+        /*padding-left: 10px;*/
+
+        }
+        #patButton{
+        float:right;
+        /*margin: 5%;*/
+        }
+        </style>
       <div>
-      <button id="petButton" style="text-align: left">Pet a cat!</button>
+      <button id="petButton" class="addMore" title="Find out more about cat adoption!">Pet a cat!</button>
       </div>
 
     <div>
-      <button id="patButton" style="text-align: right">Pat a cat!</button>
+      <button id="patButton">Pat a cat!</button>
     </div>
       <br>
       <br>
@@ -121,8 +134,13 @@
     <div class="segment5">
       <br>
       <h4 class="h4" style="font-size: 40px;"> Pat The Cat; Help The Cat</h4>
-      <p>Game Instructions: ABC Organisation will donate $0.01 to XYZ Animal Welfare Initiative for every pat you give to this Cat!</p>
+      <p>Game Instructions: ABC Organisation will donate $0.01 to XYZ Cat Welfare Society for every pat you give to this Cat!</p>
       <p>Pat the cat by tapping on the cat's head!</p>
+
+      <img src="../Pictures/hand.png" width="400px">
+      <img src="../Pictures/patcat.png" height="300px">
+
+     <button input type="button" value="Click Me" id="donatebutton" onClick="donateFunction()"> Click me!</button>
     
       <br>
       <br>
@@ -130,9 +148,9 @@
     
 
     
-    <h3 class="mouse">🐁</h3>
+    <!--<h3 class="mouse">🐁</h3>
     <h3>Food counter: <span class="counter">0</span> 🥙</h3>
-    <button>Feed!</button>
+    <button>Feed!</button>-->
 
 
     <!-- <table class="storyboard">

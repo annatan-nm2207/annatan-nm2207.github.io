@@ -1,0 +1,165 @@
+body {
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  padding-left: 12px;
+  padding-top: 4px;
+}
+
+/*.mouse {
+  font-size: 24px;
+}*/
+
+
+.auto-type{
+  color:#90AACB;
+  font-size: 150%;
+}
+
+h1 {
+  color:#C65D7B;
+  font-size: 450%;
+}
+
+.h2 {
+  color: #111222;
+}
+
+.h3 {
+  color: #C65D7B;
+  font: 100%;
+}
+
+.h4{
+  color:F6E7D8;
+  font:100%;
+}
+
+.float-child-Left{
+ float: right;
+ position: relative;
+ Width: 500px
+}
+
+.float-child-Right{
+  float: left;
+  position: relative;
+  Width: 100px;
+ }
+
+
+.segment2{
+ background-color:#F6E7D8; 
+ text-align: center;
+ font-size: 100%;
+}
+
+.lifespan{
+  color:#aaa7D8; 
+  text-align: center;
+  font-size: 100%;
+ }
+ 
+
+ .lifespanSlider{
+  color:#874356;
+  width:100%;
+  position: relative;
+  
+ }
+
+
+/* CSS */
+#petButton {
+  appearance: none;
+  background-color: #FFB085;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: right;
+}
+
+#patButton {
+  appearance: none;
+  background-color: #90AACB;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: left;
+}
+
+
+button:hover {
+  background-color: #90AACB;
+}
+
+
+.counter {
+  color: #fbbf24;
+}
+
+/* #border1{
+  background-color: black;
+}
+
+#border2{
+  background-color: #334155;
+  border-color: #92400e;
+}
+*/
+
+.segment3{
+  background-color:#fff; 
+  text-align: center;
+  font-size: 100%;
+ }
+
+.segment4{
+  background-color:#874356; 
+  text-align: center;
+  font-size: 100%;
+ }
+
+ .segment5{
+  background-color:#90AACB; 
+  text-align: center;
+  font-size: 100%;
+ }
+
+ .img{  
+  display:block;
+  width:800px;
+  margin: 0 auto;
+  transition: 0.3s;
+ }
+
+
+#canvas-container {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+}
+
+.accordion-button-0{
+ size:medium;
+}
