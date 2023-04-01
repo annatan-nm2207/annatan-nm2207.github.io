@@ -19,7 +19,7 @@ body {
 
 h1 {
   color:#C65D7B;
-  font-size: 450%;
+  font-size: 650%;
 }
 
 .h2 {
@@ -27,27 +27,43 @@ h1 {
 }
 
 .h3 {
+  margin-top:20px;
   color: #C65D7B;
   font: 100%;
 }
 
 .h4{
-  color:F6E7D8;
+  color:#F6E7D8;
   font:100%;
 }
 
-.float-child-Left{
- float: right;
+#float-Left{
+ float: left;
  position: relative;
- Width: 500px
+ Width: 100%;
 }
 
-.float-child-Right{
-  float: left;
+#float-Right{
+  float: right;
   position: relative;
   Width: 100px;
+  
  }
 
+.segment1{
+background-color:#fff; 
+font-size: 100%;
+float: left;
+}
+
+.segmentA{
+  background-color:#fff; 
+  font-size: 100%;
+  float: right;
+
+  }
+  
+ 
 
 .segment2{
  background-color:#F6E7D8; 
@@ -55,18 +71,21 @@ h1 {
  font-size: 100%;
 }
 
-.lifespan{
-  color:#aaa7D8; 
+.lifespanSlider{
   text-align: center;
   font-size: 100%;
+  margin-top:15px;
+  box-shadow: 0px 1px 10px 1px black;
+  border-radius: 12px;
+  border-color: #874356;
+  background: linear-gradient(90deg, rgb(50,0,0),rgb(135, 67, 86), rgb(235, 100, 150))
  }
  
 
- .lifespanSlider{
-  color:#874356;
-  width:100%;
-  position: relative;
-  
+#ageRanger{
+  background-color:#874356;
+  width:90%;
+  font-size:20px;  
  }
 
 
@@ -87,9 +106,15 @@ h1 {
   padding: 6px 16px;
   position: relative;
   text-align: right;
+  box-shadow: 0px 5px 10px 0px black;
+  margin-left:200px;
+  cursor:pointer;
+
+
+
 }
 
-#patButton {
+*#patButton {
   appearance: none;
   background-color: #90AACB;
   border: 1px solid rgba(27, 31, 35, 0.15);
@@ -105,6 +130,11 @@ h1 {
   padding: 6px 16px;
   position: relative;
   text-align: left;
+  box-shadow: 0px 5px 10px 0px black;
+  margin-right:200px;
+  cursor:pointer;
+
+
 }
 
 
@@ -162,4 +192,27 @@ button:hover {
 
 .accordion-button-0{
  size:medium;
+}
+
+.donatePhotos{
+  margin-left:-110px;
+  margin-right:-110px;
+}
+
+#donatebutton{
+  position:absolute;
+  height:30px;
+  transform: translate (-50%, -50%);
+  background-color: #e78b8b;
+  cursor:pointer;
+
+}
+
+/*@-webkit-keyframes spin{
+  100%{-webkit-transform:rotate(45deg);}
+}*/
+
+#handPic{
+width:400px;
+transform:rotate(4deg);
 }

@@ -26,6 +26,9 @@
 
 
 
+//Slider portion
+
+
 
   //Visual Charts
   const adoptionYears = ['2012','2013','2014','2015','2016','2017','2018','2019','2020']
@@ -128,6 +131,11 @@ donateFunction = function () {
 
 }
 
+//credits to https://www.youtube.com/watch?v=XrjKA7m5EZo for guiding on how to rotate images.
+const rotateHand = document.querySelector('#handPic');
+const donateButton = document.querySelector('#donatebutton');
 
+donateButton.addEventListener('click', () => {
+  rotateHand.style.transform = 'rotate(8deg)';
 
-
+})
