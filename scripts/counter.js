@@ -1,6 +1,6 @@
 //auto changing cat images segment
   console.log("hi2")
-  var catImage = document.getElementById('catImage');
+  var catImage = document.getElementById('catImages');
   //let images = ['Pictures/catpic1.png', 'Pictures/catpic2.png','Pictures/catpic3.png', 'Pictures/catpic4.png']
   var images = ['../Pictures/catpic1.png.png', '../Pictures/catpic2.png.png','../Pictures/catpic3.png.png', '../Pictures/catpic4.png.png', '../Pictures/catpic5.png','../Pictures/catpic6.png','../Pictures/catpic7.png', '../Pictures/catpic8.png', '../Pictures/catpic9.png', '../Pictures/catpic10.png', '../Pictures/catpic11.png']
  //added more picture variations in week 10!
@@ -127,7 +127,7 @@ donateFunction = function () {
   counter = counter +1;
  
   //step 1f
-  document.getElementById("donatebutton").innerHTML = "OK, you have now clicked " + counter + " converted into $" + counter*0.01;
+  document.getElementById("donatebutton").innerHTML = "OK, you have now clicked " + counter + " converted into $" + (counter*0.01).toFixed(2);
 
 }
 
@@ -138,4 +138,50 @@ const donateButton = document.querySelector('#donatebutton');
 donateButton.addEventListener('click', () => {
   rotateHand.style.transform = 'rotate(8deg)';
 
+  setTimeout(() => {
+    rotateHand.style.transform = 'rotate(-10deg)';
+  }, 500);
+
+  // Set it back to -10 degrees
+
+
+  
+  //how to create a loop that it will goback to default after each rotation?
+  // for (let i = 0; i < ; i++) {
+  //   dayjs.duration(500).seconds(); 
+  // rotateHand.style.transform = 'rotate(4deg)';
+
 })
+
+// let myVar = setInterval(myTimer, 1000);
+// function myTimer() {
+//   const d = new Date();
+//   document.getElementById("#handPic").innerHTML = d.toLocaleTimeString();
+// }
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+//testing waters
+// if (  rotateHand.style.transform > 'rotate(7deg)')    
+// dayjs.duration(500).seconds(); 
+//   rotateHand.style.transform = 'rotate(4deg)';
