@@ -24,17 +24,64 @@
 //   }
 // })
 
+const Slider = document.getElementById("ageRanger");
+          kittenCard.hidden = false;
+          youngAdultCard.hidden = true;
+          matureAdultCard.hidden = true;
+          seniorCard.hidden = true;
+
+Slider.addEventListener('change', (e) => {
+  const kittenCard = document.getElementById("kittenCard");
+  const youngAdultCard = document.getElementById("youngAdultCard");
+  const matureAdultCard = document.getElementById("matureAdultCard");
+  const seniorCard = document.getElementById("seniorCard");
+
+  console.log(Slider.value);
+  
+   if(Slider.value == 75) {
+    kittenCard.hidden = true;
+    youngAdultCard.hidden = true;
+    matureAdultCard.hidden = true;
+    //seniorCard.show = true;
+    seniorCard.hidden = false;
+
+  }
+  
+  else if(Slider.value == 50  ){
+      kittenCard.hidden = true;
+      youngAdultCard.hidden = true;
+      matureAdultCard.hidden = false;
+      //      matureAdultCard.show = true;
+      seniorCard.hidden = true;
+  } 
+  
+  else if(Slider.value == 25){
+        kittenCard.hidden = true;
+        youngAdultCard.hidden = false;
+        //        youngAdultCard.show = true;
+        matureAdultCard.hidden = true;
+        seniorCard.hidden = true;
+      }
+       else 
+        if(Slider.value == 0){
+          kittenCard.hidden = false;
+          //          kittenCard.show = true;
+          youngAdultCard.hidden = true;
+          matureAdultCard.hidden = true;
+          seniorCard.hidden = true;
+        }
+    });
 
 
+// Slider.addEventListener("hide", ()=> )
 //Slider portion
+//https://www.tutorialspoint.com/How-to-hide-HTML-element-with-JavaScript#:~:text=Using%20the%20style.,-display%20property&text=It%20can%20have%20values%20like,none'%20to%20hide%20html%20element.
 
 
 
   //Visual Charts
   const adoptionYears = ['2012','2013','2014','2015','2016','2017','2018','2019','2020']
   const adoptionStatistcs = ['106','88','69','74','126','127','127','130','138']
-  const animalTypes = ['Dog','Fish','Cat','Bird']
-  const petNumbers = ['58%','21%','20%','6%']
 
   const adoptionChart1 = {
     labels: adoptionYears,           //we want the x axis to be the years
@@ -70,37 +117,79 @@
         });
 
 //SECOND GRAPH
-  const petAdoptionChart = {
-    labels: animalTypes,           //we want the x axis to be the years
-    datasets: [
-        {
-            label: "Number of pets adopted in 2018",// uncomment this line and set this to "Accountancy" for example
-            data: adoptionStatistcs, // uncomment this line and set this to an array [] with commas that are the bold numbers next to Accountancy for example
-            borderWidth: 2,
-            backgroundColor: "rgba(234, 199, 199,0.5)",//put a color here as rgb(0,0,255) or hsla(20,100%,80%,0.8) format, from https://imagecolorpicker.com/en or https://color.adobe.com/ (explore the Triad radio button on the left)
-            borderColor: "black rgb(0,0,0) "//put black rgb(0,0,0) or the same color as above
-        },
-    ],
-  }
 
-  new Chart("petChart",
-        {
-            type: "bar",
-            data: petAdoptionChart,
-            options: { 
-                maintainAspectRatio: false,
-                legend: {
-                    display: false,
-                },
-                title: {
-                    display: true,
-                    text: "Based on 2018 Statistics, Cats are not as welcomed as other pets such as dogs and fishes.",
-                    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen",
-                    fontSize: 24,
-                    fontColor: 'rgb(135, 67, 86)',
-                }
-            }
-        });
+const Revenue = ['Government Support Scheme','Sterilisation Programme Income','Events & Merchanidise','SCSP - AVA Subsidy Stray Cat Sterilisation Programme','Membership', 'Donation']
+const revenueAmount = ['32640','33600','101759','176638','4800','609593']
+//const revenuePercentage = ['3.4','3.5','10.6','18.4','0.5','63.5']
+const revenueColors= ['rgba(137,207,240, 0.3)', 'rgba(137,230,255, 0.3)','rgba(137,255,230, 0.3)','rgba(137,240,200, 0.3)', 'rgba(137,207,215, 0.3)', 'rgba(255,207,215, 1)']
+
+
+
+const charityRevenueChart = {
+  labels: Revenue,           //we want the x axis to be the years
+  datasets: [
+      {
+          label: "Revenue Source",// uncomment this line and set this to "Accountancy" for example
+          data: revenueAmount, // uncomment this line and set this to an array [] with commas that are the bold numbers next to Accountancy for example
+          borderWidth: 2,
+          backgroundColor: revenueColors,//put a color here as rgb(0,0,255) or hsla(20,100%,80%,0.8) format, from https://imagecolorpicker.com/en or https://color.adobe.com/ (explore the Triad radio button on the left)
+          borderColor: "black rgb(0,0,0) "//put black rgb(0,0,0) or the same color as above
+      },
+  ],
+}
+
+
+new Chart("charityRevenueChart",
+      {
+          type: "pie",
+          data: charityRevenueChart,
+          options: { 
+              maintainAspectRatio: false,
+              legend: {
+                  display: false,
+              },
+              title: {
+                  display: true,
+                  text: "Amount of revenue for Cat Welfare Society in 2020",
+                  fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen",
+                  fontSize: 24,
+                  fontColor: 'rgb(135, 67, 86)',
+              }
+          }
+      });
+
+// replaced because newest statistics found is against my argument!
+  // const petAdoptionChart = {
+  //   labels: animalTypes,           //we want the x axis to be the years
+  //   datasets: [
+  //       {
+  //           label: "Number of pets adopted in 2018",// uncomment this line and set this to "Accountancy" for example
+  //           data: adoptionStatistcs, // uncomment this line and set this to an array [] with commas that are the bold numbers next to Accountancy for example
+  //           borderWidth: 2,
+  //           backgroundColor: "rgba(234, 199, 199,0.5)",//put a color here as rgb(0,0,255) or hsla(20,100%,80%,0.8) format, from https://imagecolorpicker.com/en or https://color.adobe.com/ (explore the Triad radio button on the left)
+  //           borderColor: "black rgb(0,0,0) "//put black rgb(0,0,0) or the same color as above
+  //       },
+  //   ],
+  // }
+
+  // new Chart("petChart",
+  //       {
+  //           type: "bar",
+  //           data: petAdoptionChart,
+  //           options: { 
+  //               maintainAspectRatio: false,
+  //               legend: {
+  //                   display: false,
+  //               },
+  //               title: {
+  //                   display: true,
+  //                   text: "Based on 2018 Statistics, Cats are not as welcomed as other pets such as dogs and fishes.",
+  //                   fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen",
+  //                   fontSize: 24,
+  //                   fontColor: 'rgb(135, 67, 86)',
+  //               }
+  //           }
+  //       });
 
 
 

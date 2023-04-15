@@ -44,7 +44,8 @@ body {
 }
 
 body > * + * {
-  margin-top: 100px;
+  margin-bottom:0px;
+  margin-left:-20px;
 }
 
 /*.mouse {
@@ -61,6 +62,8 @@ h1 {
   color:#C65D7B;
   font-size: 9vw;
   padding: -5px;
+  /* margin-bottom: px;
+  margin-top: -1px; */
 }
 
 .h2 {
@@ -68,7 +71,7 @@ h1 {
 }
 
 .h3 {
-  /* margin-top:20px; */
+  margin-top:100px;
   color: #C65D7B;
   font-size: 100%;
 }
@@ -89,7 +92,6 @@ float: right;
 padding-right: 15px;
 position: relative;
 Width: 100%;
-
 }
 
 .segment1{
@@ -103,7 +105,6 @@ width:auto;
 background-color:#fff; 
 font-size: 100%;
 float: right;
-
 }
   
  
@@ -111,6 +112,7 @@ float: right;
  background-color:#F6E7D8; 
  text-align: center;
  font-size: 100%;
+ /* margin-top:10px; */
 }
 
 .lifespanSlider{
@@ -120,7 +122,7 @@ float: right;
   box-shadow: 0px 1px 10px 1px black;
   border-radius: 12px;
   border-color: #874356;
-  background: linear-gradient(90deg, rgb(50,0,0),rgb(135, 67, 86), rgb(235, 100, 150));
+  background: linear-gradient(90deg, rgb(235, 100, 150), #e78b8b);
  }
 
 
@@ -128,6 +130,39 @@ float: right;
   background-color:#874356;
   width:90%;
   font-size:20px;  
+ }
+
+ .catLabels{
+  background:rgba(255,255,0, 0);
+  width: 13vw;
+  color:#111222;
+  padding: 5px;
+  position: relative;
+    margin-right: 50px;
+    margin-left: 70px;
+  float:left;
+  justify-content: space-between;
+ }
+
+ #label1{
+  text-align: left;
+  margin-right: 50px;
+  margin-left: 70px;
+ }
+ #label2{
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 70px;
+ }
+ #label3{
+  text-align: right;
+  margin-right: 50px;
+  margin-left: 70px;
+ }
+ #label4  {
+  text-align: right;
+  margin-right: 50px;
+  margin-left: 70px;
  }
 
  .cat-container{
@@ -139,8 +174,8 @@ float: right;
  }
 
  .cat1{
-  width: 220px;
-  height:420px;
+  width: 620px;
+  height:380px;
   font: 10px;
   background:#fff;
   color:#111222;
@@ -150,17 +185,19 @@ float: right;
   border-radius:20px;
   /* margin: 2px; */
   padding: 25px;
+  margin-bottom: 5px;
  }
 
  .catimg{
-  width:130px;
-  height:130px;
+  width:250px;
+  height:250px;
   object-fit:cover;
   border-radius:50%;
 }
 
 .catTexts{
   text-align: center;
+  margin-top:50px;
 }
 
 .subset1{
@@ -191,6 +228,11 @@ float: right;
   /* margin-left:180px; */
   cursor:pointer;
 }
+
+#box-left {
+  margin-left:150px;
+}
+
 
 #petButton1 {
   width: 400px;
@@ -280,6 +322,8 @@ button:hover {
   background-color:#90AACB; 
   text-align: center;
   font-size: 100%;
+  margin-top: 20px;
+  margin-bottom:0px;
  }
 
  .img{  
@@ -349,4 +393,9 @@ transition: transform 500ms ease-in-out;
 
 #myBtn:hover {
   background-color: #874356; /* Add a dark-grey background on hover */
+}
+
+#footer{
+  margin-bottom:0px;
+  background-color: #111222;
 }

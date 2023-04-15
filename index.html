@@ -66,14 +66,15 @@
 
 
   <div class="segment1" id="float-Left">
-    <h2 class="h2">You Should</h2>
-    <h1 class="h1">ADOPT CATS</h1>
-    <h2 class="h2"><em>Because <span class="auto-type"></span></em></h2>
+        <div>
+          <h2 class="h2">You Should</h2>
+          <h1 class="h1">ADOPT CATS</h1>
+          <h2 class="h2"><em>Because <span class="auto-type"></span></em></h2>
+        </div>
 
 
     <div id="float-Right">
       <img src="../Pictures/catpic1.png.png" id="catImages" width="200px">
-      </style>
     </div>
   </div>
 
@@ -85,25 +86,36 @@
 
 
   <!--LIFESPAN SLIDER SEGMENT-->
+  <br>
   <div class="segment2">
-
+    <br>
     <h3 style="font-size:40px" class="h3" width="100px">Lifespan of Cats</h3>
     <p style="color: #111222;">Drag the slider to learn more about cats at each stage of their lifespan!</p>
 
-    <div class="lifespanSlider">
-      <input type="range" min="0" max="100" id="ageRanger" step="25">
+    <div class="lifespanSlider" id="ranger">
+      
+          <div>
+          <p class="catLabels" id="label1"><b>Kitten</b></p>
+          <p class="catLabels" id="label2"><b>Young Adult</b></p>
+          <p class="catLabels" id="label3"><b>Mature Adult</b></p>
+          <p class="catLabels" id="label4"><b>Senior</b></p>
+          </div>
+      <input type="range" min="0" max="75" id="ageRanger" step="25" value="0">
     </div>
 
+    <br>
+    <br>
     <div class="cat-container">
-      <div class="cat1">
+      <div class="cat1" id="kittenCard">
         <div class="subset1">
           <img src="../CatPhotos/PersianA.jpg" class="catimg" />
         </div>
 
-        <h3><b>Kitten</b></h3>
+        <h2><b>Kitten</b></h2>
         <p>[from birth up to 1 year]</p>
         <!-- for the texts-->
         <div class="catTexts">
+          <br>
           <p>Kittens have a very high play drive.
             This is the best time for gradual positive introductions to people and other pets.
             It is also the right time for your cat to become comfortable with nail trims, tooth and coat brushing, their
@@ -112,11 +124,13 @@
       </div>
 
 
-      <div class="cat1">
+      <div class="cat1" id="youngAdultCard">
         <div class="subset1">
           <img src="../CatPhotos/PersianB.jpg" class="catimg" />
         </div>
-        <h3><b>Young Adult</b></h3>
+        <br>
+        <br>
+        <h2><b>Young Adult</b></h2>
         <p>[1-6 years]</p>
         <!-- for the texts-->
         <div class="catTexts">
@@ -126,11 +140,13 @@
       </div>
 
 
-      <div class="cat1">
+      <div class="cat1" id="matureAdultCard">
         <div class="subset1">
           <img src="../CatPhotos/PersianC.jpg" class="catimg" />
         </div>
-        <h3><b>Mature Adult</b></h3>
+        <br>
+
+        <h2><b>Mature Adult</b></h2>
         <p>[7-10 years]</p>
         <!-- for the texts-->
         <div class="catTexts">
@@ -143,15 +159,17 @@
       </div>
 
 
-      <div class="cat1">
+      <div class="cat1" id="seniorCard">
         <div class="subset1">
           <img src="../CatPhotos/PersianD.jpg" class="catimg" />
         </div>
         <!--<mark style:color="#111222">-->
-        <h3><b>Senior</b></h3>
+        <h2><b>Senior</b></h2>
         <!--</mark>-->
         <p>[more than 10 years]</p>
         <!-- for the texts-->
+        <br>
+
         <div class="catTexts">
           <p>Play activity begins to decrease and your cat becomes more likely to gain weight.
             Many people assume their cat is young and healthy, but a lot can change in just one cat year which equals
@@ -163,7 +181,8 @@
     <!--My challenge here is changing the slider color and expanding it full screen-->
     <!--It doesn't seem to work even after adding width="800px"-->
     <!-- MANAGED TO DO IT ALREADY with CSS-->
-
+      <br>
+      <br>
   </div>
 
   <!--CHARTSJS GRAPH ONE-->
@@ -175,25 +194,26 @@
       <!--Notice here we put the id of the "new chart" we created in the script part.-->
     </div>
     <p style="color:#111222"><em>Insights: the number of cats being abandoned and/or sent to animal shelters have
-        increased 17% from 2012 to 2020.</em></p>
+        increased 17% from 2012 to 2020 (Statista, 2022).</em></p>
 
     <!--CHARTSJS GRAPH TWO-->
+    <br> 
 
-    <h3 style="font-size:40px" class="h3" width="100px">Adopting Pets in Singapore</h3>
+    <h3 style="font-size:40px" class="h3" width="100px">Resources Allocated to Cat Welfare Society in 2020</h3>
     <div id="canvas-container">
-      <canvas id="petChart" width="400" height="400"></canvas>
+      <canvas id="charityRevenueChart" width="400" height="400"></canvas>
       <!--Notice here we put the id of the "new chart" we created in the script part.-->
     </div>
-    <p style="color:#111222"><em>Insights: adopting cats are not the top option that people usually opt for when
-        thinking
-        of adopting a pet.</em></p>
+    <p style="color:#111222"><em>Insights: According to Cat Welfare Society (2020), revenue for them consisted largely of public donations (63.5%), reimbursement from AVA
+        for SCSP (18.4%) and revenue from events and merchandise sales (10.6%).</em></p>
   </div>
 
 
   <!--LAST SECOND SEGMENT ALREADY!-->
   <div class="segment4">
+    <br>
     <h4 style="font-size: 40px">How You Can Help</h4>
-    <style>
+    <!-- <style>
       #petButton {
         float: left;
         border: left;
@@ -206,21 +226,21 @@
         float: right;
         /*margin: 5%;*/
       }
-    </style>
+    </style> -->
 
     <!--Pet Button left DIV-->
     <div class="segment4-body">
-      <div>
+      <div id="box-left">
         <button id="petButton" class="addMore" title="Find out more about cat adoption!"
           onclick="window.location.href='https://www.facebook.com/groups/217167841721670/';">Pet a cat!</a></button>
         <div id="petButton1">
           <p>Adopt a Cat Today! <br>
-            Visit our list of reliable Facebook Groups where you can browse through a whole album of cats for adoption.
+            Visit our trusted Facebook Group where you can browse through a whole album of cats that are up for adoption.
           </p>
         </div>
       </div>
       <!--Closes-->
-      <div>
+      <div id="box-right">
         <button id="patButton" onclick="window.location.href='#segment5';">Pat a cat!</button>
         <div id="patButton1">
           <p>Play a game~</p>
@@ -228,10 +248,10 @@
         </div>
       </div>
     </div>
-  </div>
 
 
   <!--Mini Game: Pat the cat-->
+  <br>
   <div id="segment5">
     <br>
     <h4 class="h4" style="font-size: 40px;"> Pat The Cat; Help The Cat</h4>
@@ -250,6 +270,12 @@
     <br>
   </div>
 
+  <div id="footer">
+    <br>
+    <p> <em>- End of Page- </em></p> 
+    <p>Copyright 2023 || AnnaT2M's Work NM2207</p>
+    <br>
+  </div>
 
 
   <!--<h3 class="mouse">🐁</h3>
